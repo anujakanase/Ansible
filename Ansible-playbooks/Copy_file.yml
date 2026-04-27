@@ -1,0 +1,13 @@
+---
+- name: Copying files to remote
+  hosts: all
+
+  tasks:
+  - name: Copy files
+    copy:
+      src: /root/file.txt
+      dest: /tmp/
+      owner: riya
+      group: devops
+      mode: ugo=rw
+      backup: true

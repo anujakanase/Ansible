@@ -1,0 +1,16 @@
+---
+- name: User Mgm
+  hosts: all
+
+  tasks:
+  - name: User Creation
+    user:
+      name: "{{ item }}"
+      comment: new user adding for Cloud Team
+      shell: /bin/bash
+    loop:
+      - Niya
+      - Kevin
+      - Jack
+      - Moni
+      - Rina  
