@@ -32,7 +32,7 @@
 
   ansible all -m service -a "name=mysql state=started"
 
-  # or use a single line command with a loop
+  or 
 
   for service in nginx mysql; do ansible all -m service -a "name=$service state=started"; done
 
@@ -42,7 +42,7 @@
 
   ansible all -m service -a "name=mysql state=status"
 
-  # or use a single line command with a loop
-
+   or
+   
   for service in nginx mysql; do ansible all -m service -a "name=$service state=status"; done
 
