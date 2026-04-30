@@ -54,4 +54,28 @@ Ansible Galaxy is essentially the "app store" or central public repository for A
 
 Instead of writing every automation task from scratch, we can use Galaxy to pull pre-written, battle-tested code for common tasks like installing Jenkins, configuring a firewall, or setting up a Kubernetes cluster.
 
+* Ansible Vault
+  
+It allows you to encrypt sensitive information like:
+
+🔒 Passwords
+
+🔒 API keys
+
+🔒 SSH credentials
+
+🔒 Secrets inside playbooks & variables
+
+* What is Ansible Red Hat Tower?
+  
+It’s a web-based UI and automation controller that helps you:
+
+🔹 Centralize and manage all your Ansible workflows
+
+🔹 Schedule and monitor jobs
+
+🔹 Control access with Role-Based Access Control (RBAC)
+
+🔹 Integrate with CI/CD pipelines and external systems
+
 
