@@ -109,11 +109,17 @@ Easy maintenance
 
 📁 Typical Role Structure:
 roles/
+
  └── nginx/
+ 
      ├── tasks/
+     
      ├── handlers/
+     
      ├── templates/
+     
      ├── defaults/
+     
      └── vars/
 
 ## 🌐 Ansible Galaxy
