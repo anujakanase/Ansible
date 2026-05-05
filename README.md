@@ -90,7 +90,7 @@ apt / yum → Install packages
 service → Manage services
 copy / template → Manage files
 
-###📜 3. Playbooks
+### 📜 3. Playbooks
 
 Playbooks are YAML files that define automation workflows.
 
@@ -98,7 +98,7 @@ Map a group of hosts to tasks
 Describe what needs to be done
 Ensure consistency across systems
 
-##📦 Ansible Roles
+## 📦 Ansible Roles
 
 An Ansible Role is a structured way to organize playbooks into reusable components.
 
@@ -116,7 +116,7 @@ roles/
      ├── defaults/
      └── vars/
 
-##🌐 Ansible Galaxy
+## 🌐 Ansible Galaxy
 
 Ansible Galaxy is the central repository for Ansible roles and collections.
 
@@ -126,7 +126,7 @@ Reuse community-built roles
 Save development time
 Use tested & reliable configurations
 
-##Ansible Vault
+## Ansible Vault
   
 It allows you to encrypt sensitive information like:
 
