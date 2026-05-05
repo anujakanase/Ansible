@@ -1,4 +1,4 @@
-* For Debian/Ubuntu Based Systems
+## For Debian/Ubuntu Based Systems
   
 1. Update the Package List
 
@@ -24,7 +24,7 @@
 
   ansible all -m script -a "/home/ubuntu/patching.sh"
 
-* For RedHat/CentOS/Fedora Systems
+## For RedHat/CentOS/Fedora Systems
   
 1. Update the Package List
  
