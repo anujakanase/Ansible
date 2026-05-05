@@ -1,17 +1,14 @@
 # For Debian/Ubuntu Based Systems
-
-### 1.Check Disk Usage
 ---
+### 1.Check Disk Usage
 ```bash
 ansible all -m command -a "df -h"
 
 ### 2.List Available Disks & Partitions
----
 ```bash
 ansible all -m command -a "lsblk"
 
 ### 3. Create a New Partition
-
 ```bash
 ansible all -m command -a "parted /dev/sdX mkpart primary ext4 0% 100%"
 
