@@ -1,4 +1,4 @@
-* System Information
+## System Information
 
 1. To check Hostname
 
@@ -36,7 +36,7 @@
 
   ansible all -m setup -a 'filter=ansible_interfaces'
 
-* Service Status
+## Service Status
 
 1. Check if a Service is Running
 
@@ -46,7 +46,7 @@
 
   ansible all -m command -a "systemctl list-units --type=service --state=running"
 
-* Processes & Performance
+## Processes & Performance
 
 1. List Running Processes
  
@@ -60,7 +60,7 @@
 
   ansible all -m command -a "ps aux --sort=-%cpu | head -n 10"
 
-* Logs & Files
+## Logs & Files
 
 1. View last 10 Lines of a Log File
 
@@ -70,7 +70,7 @@
 
   ansible all -m command -a "du -sh /path/to/directory"
 
-* Network Monitoring
+## Network Monitoring
 
 1. Check Listening Ports
 
@@ -80,7 +80,7 @@
 
   ansible all -m command -a "ss -tuln"
 
-* User & Groups
+## User & Groups
 
 1. List Users
 
@@ -90,7 +90,7 @@
  
   ansible all -m command -a "cut -d: -f1 /etc/group"
 
-* Package Information
+## Package Information
 
 1. List Installed Packages (Debian-based)
 
@@ -100,13 +100,13 @@
 
   ansible all -m command -a "rpm -qa"
 
-* System Load
+## System Load
 
 1. Current Load Averages
 
   ansible all -m command -a "cat /proc/loadavg"
 
-* Custom Facts
+## Custom Facts
 
 1. Gather Custom Facts (Using a setup module)
 
