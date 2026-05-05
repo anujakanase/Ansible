@@ -1,6 +1,6 @@
 # For Debian/Ubuntu Based Systems
 
-# 1.Check Disk Usage
+ 1.Check Disk Usage
 
 ```bash
 ansible all -m command -a "df -h"
