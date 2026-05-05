@@ -1,29 +1,44 @@
-* For Debian/Ubuntu Based Systems
+## For Debian/Ubuntu Based Systems
 
-1. Check Disk Usage
+### 1. Check Disk Usage
 
-  ansible all -m command -a "df -h"
+Displays disk usage in human-readable format.
 
-2. List Partitions
+```bash
+ansible all -m command -a "df -h"
 
-  ansible all -m command -a "lsblk"
+### 2. List Available Disks & Partitions
 
-3. Create a new Partition
+Shows block devices and partition details.
 
-  ansible all -m command -a "parted /dev/sdX mkpart primary ext4 0% 100%"
+```bash
+ansible all -m command -a "lsblk"
 
-4. Format a Partiion (e.g., /dev/sdX1 with ext4)
- 
-  ansible all -m command -a "mkfs.ext4 /dev/sdX1"
+ ### 3. Create a New Partition
 
-5. Mount a Filesystem
- 
-  ansible all -m mount -a "path=/mnt/mydisk src=/dev/sdX1 fstype=ext4 state=mounted"
+Creates a primary partition on a disk.
 
-6. Unmount a Filesystem
+```bash
+ansible all -m command -a "parted /dev/sdX mkpart primary ext4 0% 100%"
 
-  ansible all -m mount -a "path=/mnt/mydisk state=unmounted"
+### 4. Format a Partition
 
-7. Check Disk Health
+Formats a partition with the ext4 filesystem.
 
-  ansible all -m command -a "smartctl -a /dev/sdX"
+```bash
+ansible all -m command -a "mkfs.ext4 /dev/sdX1"
+
+### 5. Mount a Filesystem
+
+```bash
+ansible all -m mount -a "path=/mnt/mydisk src=/dev/sdX1 fstype=ext4 state=mounted"
+
+### 6. Unmount a Filesystem
+
+```bash
+ansible all -m mount -a "path=/mnt/mydisk state=unmounted"
+
+### 7. Check Disk Health
+
+```bash
+ansible all -m command -a "smartctl -a /dev/sdX"
