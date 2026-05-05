@@ -2,7 +2,7 @@
 
 ### 1.Check Disk Usage
 ---
-``bash
+```bash
 ansible all -m command -a "df -h"
 
 ### 2.List Available Disks & Partitions
