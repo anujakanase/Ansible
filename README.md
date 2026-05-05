@@ -1,6 +1,4 @@
-# 🚀 Ansible Configuration Management Project
-
-## 📌 Overview
+# Ansible Configuration Management 
 
 Configuration Management refers to managing and maintaining systems in a **consistent, reliable, and automated way** over time.
 
@@ -71,7 +69,7 @@ Works seamlessly with:
 
 # 🧩 Key Components of Ansible
 
-### 📁 Inventory
+### 📁 1.Inventory
 The **Inventory** defines the list of managed nodes (servers) and groups them logically.
 
 - Contains IP addresses or hostnames  
@@ -83,7 +81,7 @@ The **Inventory** defines the list of managed nodes (servers) and groups them lo
 192.168.1.101
 192.168.1.102
 
-🧰 2. Modules
+### 🧰 2. Modules
 
 Modules are the building blocks of Ansible tasks — they perform the actual work.
 
@@ -93,7 +91,7 @@ apt / yum → Install packages
 service → Manage services
 copy / template → Manage files
 
-📜 3. Playbooks
+###📜 3. Playbooks
 
 Playbooks are YAML files that define automation workflows.
 
@@ -101,7 +99,7 @@ Map a group of hosts to tasks
 Describe what needs to be done
 Ensure consistency across systems
 
-###📦 Ansible Roles
+##📦 Ansible Roles
 
 An Ansible Role is a structured way to organize playbooks into reusable components.
 
@@ -119,7 +117,7 @@ roles/
      ├── defaults/
      └── vars/
 
-###🌐 Ansible Galaxy
+##🌐 Ansible Galaxy
 
 Ansible Galaxy is the central repository for Ansible roles and collections.
 
@@ -129,7 +127,7 @@ Reuse community-built roles
 Save development time
 Use tested & reliable configurations
 
-###Ansible Vault
+##Ansible Vault
   
 It allows you to encrypt sensitive information like:
 
@@ -141,7 +139,7 @@ It allows you to encrypt sensitive information like:
 
 🔒 Secrets inside playbooks & variables
 
-### What is Ansible Red Hat Tower?
+## What is Ansible Red Hat Tower?
   
 It’s a web-based UI and automation controller that helps you:
 
