@@ -1,4 +1,4 @@
-# For Debian-based Systems (e.g., Ubuntu)
+## For Debian-based Systems (e.g., Ubuntu)
 
 1. Install a Package
 
@@ -44,7 +44,7 @@
 
   ansible all -m apt -a "deb=/path/to/package.deb"
 
-# For RedHat-based Systems (e.g., CentOS, RHEL)
+## For RedHat-based Systems (e.g., CentOS, RHEL)
   
 1. Install a Package
 
