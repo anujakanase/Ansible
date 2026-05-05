@@ -1,11 +1,10 @@
 # For Debian/Ubuntu Based Systems
----
- 1.Check Disk Usage
 
-```bash
+### 1.Check Disk Usage
+ 
 ansible all -m command -a "df -h"
 
- # 2.List Available Disks & Partitions
+### 2.List Available Disks & Partitions
 
 ```bash
 ansible all -m command -a "lsblk"
