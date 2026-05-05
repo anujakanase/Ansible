@@ -67,7 +67,7 @@ Works seamlessly with:
 
 ---
 
-# 🧩 Key Components of Ansible
+## 🧩 Key Components of Ansible
 
 ### 📁 1.Inventory
 The **Inventory** defines the list of managed nodes (servers) and groups them logically.
@@ -75,8 +75,7 @@ The **Inventory** defines the list of managed nodes (servers) and groups them lo
 - Contains IP addresses or hostnames  
 - Organizes systems into groups like `[webservers]`, `[databases]`  
 - Can be written in **INI or YAML format**
-
-```ini
+  
 [webservers]
 192.168.1.101
 192.168.1.102
